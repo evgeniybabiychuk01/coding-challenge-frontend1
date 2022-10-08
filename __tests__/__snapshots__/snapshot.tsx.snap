@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div className={styles.main}>
+      <AppLoading startLoading={loading} />
+      <span className={styles.ellipse_1}>
+        <Image alt='ellipse-1' src='/images/ellipse.svg' width={795} height={795} />
+      </span>
+      <div className='flex items-center justify-between mx-4 mt-4'>
+        <p className='font-SourceSerifPro font-normal text-xl'>Order Dashboard</p>
+        <p className='font-montserrat font-normal text-xl z-10'>
+          Refresh in <span className='font-bold font-montserrat'>{countDown}</span>
+        </p>
+      </div>
+      <div className='flex'>
+        <h3 className='font-montserrat font-bold text-3xl ml-4 w-72'>{targetMonth} 2021</h3>
+        <span className='mr-2' onClick={handleLeftSwipe}>
+          <Image alt='' src='/images/left.svg' width={32} height={32} />
+        </span>
+        <span onClick={handleRightSwipe}>
+          <Image alt='' src='/images/right.svg' width={32} height={32} />
+        </span>
+      </div>
+      <h1 className='font-robot text-[12rem]'>{totalAmount}</h1>
+
+      <ProgressBar completedOrders={totalAmount} totalTargets={targets} />
+
+      <div className='grid grid-cols-2 gap-4 mt-12'>
+        <div className='bg-app-div-background h-72 overflow-auto'>
+          <LeftTable />
+        </div>
+        <div className='bg-app-div-background h-72 overflow-auto'>
+          <RightTable />
+        </div>
+      </div>
+    </div>
+`;

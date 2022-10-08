@@ -1,0 +1,28 @@
+.progress header span {
+    color: #fff;
+    float: right;
+}
+
+.progress .bar {
+    position: relative;
+    height: 100%;
+}
+
+.progress .bar .ref {
+    position: absolute;
+    left: 80%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+}
+
+.progress .bar .ref:before {
+    content: attr(data-ref);
+    position: absolute;
+    width: 100px;
+    left: -50px;
+    top: -60%;
+    color: #fff;
+    text-align: center;
+}
